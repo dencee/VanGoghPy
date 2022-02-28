@@ -2,16 +2,22 @@ if False:
     from lib.Processing3 import *
 
 class Brush:
+    NUMBER_OF_BRISTLES = 200
+    BRUSH_SIZE = 20
+    BRUSH_THICKNESS = 20
+    BRUSH_STAGGER = 6
+
     def __init__(self, painting):
         self.painting = painting
         self.x = 0
         self.y = 0
         self.bristles = list()
 
-        self.num_bristles = 200
-        self.brush_size = 20
-        self.max_brush_thickness = 20
-        self.brush_stagger = 6
+        # Brush settings
+        self.num_bristles = Brush.NUMBER_OF_BRISTLES
+        self.brush_size = Brush.BRUSH_SIZE
+        self.max_brush_thickness = Brush.BRUSH_THICKNESS
+        self.brush_stagger = Brush.BRUSH_STAGGER
 
         self.initialize_bristles()
 
