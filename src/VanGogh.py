@@ -62,6 +62,6 @@ if __name__ == '__main__':
     try:
         __papplet__
     except NameError:
-        import os
-        os.system('java -jar lib/processing-py.jar ' + __file__)
+        import subprocess
+        subprocess.call('java -jar lib/processing-py.jar ' + __file__)
 
