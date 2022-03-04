@@ -1,5 +1,5 @@
 if False:
-    from lib.Processing3 import *
+    from ..lib.Processing3 import *
 
 class Brush:
     NUMBER_OF_BRISTLES = 200
